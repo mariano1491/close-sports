@@ -1,0 +1,44 @@
+.nav-main {
+    background-color: #121212;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: auto;
+    
+    
+}
+.logo {
+    color: rgb(91, 91, 189);
+    padding-bottom: 30px;
+}
+.logoClose {
+    color: white;
+}
+.App-Header {
+    background-color: #121212;
+    padding: 20px;
+}
+ul   {
+    list-style: none;
+    
+}
+a {
+    text-decoration: none;
+}
+.Navbar {
+    display: flex;
+    justify-content: center;
+}
+.nav-link {
+    color: white;
+    font-size: 1.1rem;
+    background-color: #121212;
+    border: none;
+  
+}
+.nav-link:hover {
+    background-color: rgb(91, 91, 189);
+    border-radius: 20px;
+    color: white;
+    
+}
