@@ -1,3 +1,4 @@
+import CartWidget from "./CartWidget";
 import "./navbar.css"
 
 export default function NavBar() {
@@ -23,7 +24,7 @@ export default function NavBar() {
           <button className="nav-link" aria-current="page" >NIÑOS</button>
         </li>
         <li className="nav-item dropdown">
-          <button className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button className="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             MARCAS
           </button>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -32,14 +33,17 @@ export default function NavBar() {
             <li><button className="dropdown-item" >Puma</button></li>
           </ul>
         </li>
-       
+              
       </ul>
+    
      
     </div>
+    
   </div>
+  <CartWidget/> 
 </nav>
 </ul>
     </nav>
       
-        )
+        );
 }
