@@ -10,9 +10,10 @@ function App() {
     <header className="App-Header">
    <h1 className='logo'><span className='logoClose'>Close</span> Sports</h1>
     <NavBar/>
-  <IntemListContainer greet="Tienda deportiva" color="white"/>
+  
   
     </header>
+    <IntemListContainer saludo="Tienda deportiva" color="white"/>
     <ItemCount stock={10} initial= {1}/>
     </div>
   );
