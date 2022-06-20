@@ -1,11 +1,15 @@
 import React from 'react'
 
 const Item = ({item}) => {
+    const styles = {
+        maxWidth: "380px",
+        margin: "5px 15px"
+    };
 
     return( 
-    <div>
+    <div style={styles} key={item.id}>
         <div>
-            <img src={item.img} alt="" />
+            <img width="200" src={item.img} alt="" />
         </div>
         <div>
             <h2>{item.nombre}</h2>

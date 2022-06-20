@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar/NavBar";
 import "./components/NavBar/navbar.css"
 import IntemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemCount from "./components/itemCount/ItemCount";
+import ItemDetailContainer from "./components/itemDetailContainer/ItemDetailContainer";
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
   
   
     </header>
-    <IntemListContainer saludo="Tienda deportiva" color="white"/>
+     <IntemListContainer saludo="Tienda deportiva" color="white"/>
+    <ItemDetailContainer greeting="Detalles de los productos"/>
     <ItemCount stock={10} initial= {1}/>
     </div>
   );
