@@ -23,6 +23,7 @@ function ItemListContainer({saludo}) {
     <div>
       <h2 className="h2Color">{saludo}</h2>
       <ItemList items={productos}/>
+      <a href="/detalle">ir a url detalle</a>
     </div>
   );
 }

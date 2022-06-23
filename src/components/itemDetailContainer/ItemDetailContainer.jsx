@@ -1,15 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { productos } from "../../mook/productos";
 import ItemDetail from "../itemDetail/ItemDetail";
+import { useParams} from 'react-router-dom'
 
 
 function ItemDetailContainer({saludo}) {
   const [product, setProduct] = useState({});
+  const {itemId} = useParams();
 
   useEffect(() => {
     const llamarProducto = new Promise((res, rej) => {
       setTimeout(() => {
-        res(productos[0]);
+       const ItemFound = productos.find (plant => {
+        return plant.id ==itemId
+       })
+       res(ItemFound)
       }, 600);
     });
     llamarProducto.then((res) => {

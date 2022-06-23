@@ -3,19 +3,24 @@ import "./components/NavBar/navbar.css"
 import IntemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemCount from "./components/itemCount/ItemCount";
 import ItemDetailContainer from "./components/itemDetailContainer/ItemDetailContainer";
-
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-    <header className="App-Header">
+    <div className="App mx-auto">
+      <BrowserRouter>
+      <header className="App-Header">
    <h1 className='logo'><span className='logoClose'>Close</span> Sports</h1>
-    <NavBar/>
-  
-  
+   <NavBar/>
     </header>
-     <IntemListContainer saludo="Tienda deportiva" color="white"/>
-    <ItemDetailContainer greeting="Detalles de los productos"/>
+      
+      <Routes>
+        <Route path='/' element= { <IntemListContainer saludo="Tienda deportiva" color="white"/>}></Route>
+      <Route path ='/plant/:itemId' element ={<ItemDetailContainer greeting="Detalles de los productos"/>}></Route>
+      </Routes>
+      </BrowserRouter>
+    
+    
     <ItemCount stock={10} initial= {1}/>
     </div>
   );
